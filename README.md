@@ -5,6 +5,6 @@ In this repository, you will find code that I produced while studying Evolutiona
 ## Replicator equations and ternary diagrams
 Inside the folder 'Ternary Lib,' you will find a very crude implementation of a library that you can use to plot qualitative trajectory ternary diagrams and, to some degree, solve the replicator equations.
 
-##An example
+## An example
 
 ![Game](https://github.com/edvvi/a-very-simple-ternary-lib/assets/157051183/3a0517c3-490d-4e7d-ac1d-9a004e490c90)
