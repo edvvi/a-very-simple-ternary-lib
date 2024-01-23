@@ -64,6 +64,19 @@ class Plotter:
     def __to_xy(self, a,b,c):
         return ((float(a)+1-float(b))/2, (sqrt(3)/2)*float(c))
 
+    def dot(self, a, b, c, **kwargs):  
+        defaultKwargs = {'dot_size': 5, 
+                        'dot_color':  'black',
+                        'dot_border_color': 'black'}  
+                   
+        kwargs = { **defaultKwargs, **kwargs }   
+        x = self.__to_xy(a,b,c)[0]
+        y = self.__to_xy(a,b,c)[1]
+
+        self._ax.plot(x, y, marker="o", markersize=kwargs['dot_size'], 
+                      markeredgecolor=kwargs['dot_border_color'], markerfacecolor=kwargs['dot_color'])
+
+
     def plot(self, *args, **kwargs):
         #placeholder code --------------------------------------------------------
         x = []
